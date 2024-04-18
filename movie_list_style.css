@@ -1,9 +1,22 @@
 body {
-    background:linear-gradient(to left,pink,purple);
+    position: relative;
+    margin: 0px;
+    margin-top: -50px;
+    background-color: black;
+}
+
+body::before {
+    content: "";
+    background-image:url(images/movies.jpg);
+    position: absolute;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    margin: 0px;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    z-index: -1;
 }
 
 h1 {
@@ -16,137 +29,121 @@ h1 {
 h2 {
     font-size: 15mm;
     margin-left: 10mm;
-    color: white;
-    text-shadow: 4px 5px 3px black;
-}
-ul {
-    font-size: 8mm;
-    margin-left: 10mm;
+    margin-bottom: 0px;
     color: white;
     text-shadow: 4px 5px 3px black;
 }
 
-ol {
-    font-size: 8mm;
-    margin-left: 10mm;
-    color: white;
-    text-shadow: 4px 5px 3px black;
+#movieList {
+    width: 65%;
+    float: left;
 }
 
-li {
+.myList {
+    font-size: 8mm;
+    color: white;
+    text-shadow: 4px 5px 3px black;
     font-weight: bold;
     font-style: italic;
 }
 
-#alita {
+.list {
+    margin-left: 25px;
+}
+
+.landscape {
     width: 800px;
     display: block;
     margin-top: 5mm;
     margin-bottom: 5mm;
 }
 
-#avatar {
+.portrait {
     width: 400px;
     display: block;
     margin-top: 5mm;
     margin-bottom: 5mm;
 }
 
-#doctor_strange {
-    width: 400px;
-    display: block;
-    margin-top: 5mm;
-    margin-bottom: 5mm;
+#profile {
+    position: relative;
+    top: 0mm;
 }
 
-#wednesday {
-    width: 400px;
-    display: block;
-    margin-top: 5mm;
-    margin-bottom: 5mm;
-}
-
-#stranger_things {
-    width: 800px;
-    display: block;
-    margin-top: 5mm;
-    margin-bottom: 5mm;
-}
-
-#sherlock {
-    width: 400px;
-    display: block;
-    margin-top: 5mm;
-    margin-bottom: 5mm;
+#profile_picture {
+    cursor: pointer;
+    position: relative;
+    width: 250px;
+    outline-color: white;
+    right: -72mm;
+    top: 0mm;
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+    border-radius: 6px;
 }
 
 #profile_name {
     color: white;
     font-style: normal;
     text-decoration: none;
-    position:absolute;
-    right: 17mm;
-    bottom: 54mm;
+    position:relative;
+    right: -93mm;
+    top: 1.8mm;
     background-color: black;
-    border-style: solid;
-    border-width: 5px;
-    border-radius: 10px;
+    border: 5px solid white;
+    border-radius: 5px;
     padding: 10px;
-
+    font-size: 8mm;
+    font-weight: bold;
 }
+
+#ending {
+    position: relative;
+    display: block;
+    text-align: center;
+    margin-top: 250%;
+}
+
 #back_to_top {
     font-size: 7mm;
     font-weight: bold;
     color: black;
     background-color: white;
     border-radius: 10px;
-    text-underline-offset: 100px;
-    position: absolute;
-    right: 175mm;
+    text-decoration: none;
+    position: relative;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 15px;
     padding-right: 15px;
 }
 
-#profile_picture {
-    position: absolute;
-    width: 250px;
-    outline-color: white;
-    right: 0mm;
-    top: 47mm;
-    border-style: solid;
-    border-color: white;
-    border-width: 5px;
-    border-radius: 20px;
-}
-
 .fa-youtube {
     color: red;
     font-size: 50px;
     position: relative;
-    left: 590px;
+    margin-right: 3%;
 }
 
 .fa-facebook {
-    color: blue;
+    color: rgb(43, 84, 248);
     font-size: 50px;
     position: relative;
-    left: 640px;
+    margin-right: 3%;
 }
 
 .fa-instagram {
     color: white;
     font-size: 50px;
     position: relative;
-    left: 690px;
+    margin-right: 3%;
 }
 
 .fa-twitter {
     color: rgb(0, 157, 255);
     font-size: 50px;
     position: relative;
-    left: 740px;
 }
 
 #back_to_top:hover {
